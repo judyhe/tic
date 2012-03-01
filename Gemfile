@@ -5,8 +5,21 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
+gem 'heroku'
+gem 'sorcery'
+gem 'jquery-rails'
+gem 'airbrake', '3.0.5'
+gem 'fog', '1.1.1'
+gem 'redcarpet', '2.1.0'
 
+group :production do 
+  gem 'thin' # recommended for rails on heroku
+end
+
+group :development do
+  gem 'ruby-debug19', :require => 'ruby-debug'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,7 +33,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -33,6 +45,3 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
