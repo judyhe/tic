@@ -65,7 +65,7 @@ GEM
       nokogiri (~> 1.5.0)
       ruby-hmac
     formatador (0.2.1)
-    heroku (2.21.1)
+    heroku (2.20.1)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       rubyzip
@@ -175,7 +175,7 @@ DEPENDENCIES
   airbrake (= 3.0.5)
   coffee-rails (~> 3.2.1)
   fog (= 1.1.1)
-  heroku
+  heroku (= 2.20.1)
   jquery-rails
   pg
   rails (= 3.2.1)
